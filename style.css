@@ -1,0 +1,270 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.color-overlay{
+  background: linear-gradient(#0d1e42,#0d1e42);
+  width: 100%;
+  height: 88vh;
+  opacity: .8;
+  position: absolute;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    background-image: url(block\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-image: url(block\ 1.jpg);
+  }
+  20%{
+    background-image: url(block\ 2.jpg);
+  }
+  50%{
+    background-image: url(display\ 1.jpg);
+  }
+  80%{
+    background-image: url(display\ 2.jpg);
+  }
+  100%{
+    background-image: url(background.jpg);
+  }
+}
+
+.box1{
+    position: relative;
+    top: 0;
+    color: #ff8c00;
+    left: 0;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    font-weight: 500;
+}
+
+.box2{
+  display: block;
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  position: relative;
+  padding-left: 17%;
+  margin-top: 7%;
+  padding-top: 20px;
+  color: #ffffffb1;
+}
+
+.box2 .paragraph h1 .give{
+  margin-top: 20px;
+}
+
+.box2>h1{
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.box2 .paragraph{
+  font-size: 20px;
+}
+
+.box2 .give a{
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.box2 .give a:hover{
+  cursor: pointer;
+  background-color: #ff8c00b8;
+  color: #010302c9;
+  transition: 0.5s;
+}
+
+
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .donate>a{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+  }
+
+  .donate>a:hover{
+    cursor: pointer;
+    background-color: #ff8c00ec;
+    color: #010302c9;
+    border: 1px solid;
+    transition: 0.5s;
+  }
+
+ strong a:hover:hover{
+  color: #85afefe0;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 7px;
+  transition: 0.5s;
+ }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-menu li a {
+    color: rgb(19, 19, 19);
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: #bfefff4f;
+    background-position: center;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #c1d8c9;
+    background-color: #ff8c00c1;
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
+  }
+
+
+/*MAIN STYLING START HERE*/
+.main{
+  display: flex;
+  justify-content: center;
+  
+  min-height: auto;
+  margin-top: 5%;
+  
+  position: relative;
+ 
+}
+
+.main .hero{
+  position: relative;
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border: 1px wheat;
+  border-radius: 20px;
+  backdrop-filter: blur(20px); 
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  justify-content: center;
+  margin-top: -30px;
+  display: flex;
+  margin-left: -25%;
+}
+
+.main .hero img{
+  height: 198px;
+  width: 200px;
+  border-radius: 30px;
+  position: relative;
+}
+
+
+
+.topic{
+  position: relative;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  border: 1px solid wheat;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  justify-content: center;
+  display: flex;
+}
+
+.pert{
+  float: right;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: #ff8c00;
+  border-radius: 10px;
+  background-image: url(block\ 3.jpg);
+  background-position: center;
+  background-size: cover;
+
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 40s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+0%{
+  background-image: url(block\ 1.jpg);
+}
+20%{
+  background-image: url(block\ 2.jpg);
+}
+50%{
+  background-image: url(display\ 1.jpg);
+}
+80%{
+  background-image: url(display\ 2.jpg);
+}
+100%{
+  background-image: url(background.jpg);
+}
+}
+
+
+footer{
+  height: 25vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.808);
+  margin-top: 10px;
+}

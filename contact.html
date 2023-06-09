@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homeless-Hope-Foundation</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="gradient">
+
+      <h1>Contact Us</h1>
+      <form id="contact-form" onsubmit="return validateForm()"  method="post">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="title">Title:</label>
+          <textarea id="title" name="title" required></textarea>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+       <br><br>
+          
+          <input type="submit" id="submit" value="Send">
+      </form></div>
+
+      <script src="java.js"></script>
+
+</body>
+</html>
+
